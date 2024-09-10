@@ -1,7 +1,7 @@
 /* eslint-disable prefer-const */
 /* eslint-disable no-prototype-builtins */
 import { type ClassValue, clsx } from "clsx";
-import queryString from "query-string";
+import queryString from "query-string"; "query-string";
 import { twMerge } from "tailwind-merge";
 
 // import { aspectRatioOptions } from "@/constants";
