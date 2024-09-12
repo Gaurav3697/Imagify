@@ -1,6 +1,5 @@
 import { model, models, Schema } from "mongoose";
 
-
 const userSchema = new Schema({
     clerkId: {
         type: String,
@@ -23,11 +22,9 @@ const userSchema = new Schema({
     },
     firstName: {
         type: String,
-        required: true,
     },
     lastName: {
         type: String,
-        required: true,
     },
     planId: {
         type: Number,
