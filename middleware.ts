@@ -1,12 +1,7 @@
-import { clerkMiddleware, createRouteMatcher  } from '@clerk/nextjs/server'
+import { clerkMiddleware } from '@clerk/nextjs/server'
 
 // Make sure that the `/api/webhooks/(.*)` route is not protected here
-const isProtectedRoute = createRouteMatcher([
-  '/api/webhooks/(.*)',
-])  
-export default clerkMiddleware((auth,req)=>{
-  if(isProtectedRoute(req))auth().protect()
-})
+export default clerkMiddleware()
 
 export const config = {
   matcher: [
